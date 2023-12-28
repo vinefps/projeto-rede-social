@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.HelloController">
+    <center>
+        <VBox spacing="5" alignment="CENTER">
+            <Label text="Login" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+            <HBox spacing="5" alignment="CENTER">
+                <TextField fx:id="Email" promptText="usuario@email.com"/>
+            </HBox>
+
+            <HBox spacing="5" alignment="CENTER">
+                <PasswordField fx:id="Password" promptText="Senha"/>
+            </HBox>
+
+            <Button text="  Acessar  " style="-fx-background-color: #007BFF; -fx-text-fill: white;" onAction="#login"/>
+
+            <Button text="Cadastrar" style="-fx-background-color: #007BFF; -fx-text-fill: white;" onAction="#goToCadastro"/>
+
+        </VBox>
+    </center>
+</BorderPane>

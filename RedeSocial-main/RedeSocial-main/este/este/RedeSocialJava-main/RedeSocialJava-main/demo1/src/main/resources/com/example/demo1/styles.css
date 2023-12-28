@@ -1,0 +1,74 @@
+/* Estilos Gerais do Conteúdo */
+.root {
+    -fx-background-color: #f0f0f0; /* Cor de fundo da cena */
+    -fx-padding: 7; /* Espaçamento interno */
+}
+
+/* Estilos de Layout */
+#mainBorderPane {
+    -fx-background-color: white;
+}
+
+#mainBorderPane #scene {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 500px;
+}
+
+/* Lista de Amigos */
+.custom-list-view {
+    -fx-background-color: #f0f0f0; /* Cor de fundo */
+    -fx-border-color: #d0d0d0; /* Cor da borda */
+    -fx-border-width: 1; /* Largura da borda */
+}
+
+.custom-list-view .list-cell {
+    -fx-background-color: transparent; /* Fundo da célula */
+    -fx-text-fill: #333333; /* Cor do texto */
+    -fx-padding: 5; /* Preenchimento interno */
+}
+
+.custom-list-view .list-cell:selected {
+    -fx-background-color: #4CAF50; /* Cor de fundo quando selecionado */
+    -fx-text-fill: white; /* Cor do texto quando selecionado */
+}
+
+/* Estilos do Botão de Chat */
+#enterChatButton, #RemoveFriendButton {
+    -fx-translate-x: -5px; /* Altere o valor conforme necessário */
+    -fx-translate-y: -215px;
+}
+
+/* Estilos do VBox */
+#chatVBox {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+/* Estilos do ListView dentro do VBox */
+#chatListView {
+    -fx-vbox-vgrow: always;
+}
+
+/* Estilos do HBox dentro do VBox */
+#messageHBox {
+    -fx-spacing: 10;
+}
+
+/* Estilos do TextField dentro do HBox
+#messageTextField {
+    -fx-prompt-text-fill: cinza; /* Cor do texto de orientação
+    -fx-hgrow: always;
+}*/
+
+/* Estilos do Botão dentro do HBox */
+#sendButton {
+    /* Adicione estilos adicionais conforme necessário */
+}
+.chat-pane {
+    -fx-background-color: lightgray;
+}
+
+.custom-vbox {
+    -fx-alignment: center;
+}
+

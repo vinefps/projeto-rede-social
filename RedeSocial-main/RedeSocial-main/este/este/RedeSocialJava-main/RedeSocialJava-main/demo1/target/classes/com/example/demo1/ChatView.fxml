@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.ChatController" styleClass="chat-pane" prefWidth="800" prefHeight="600">
+    <left>
+        <!-- Adicione um conteúdo à esquerda (sidebar) -->
+        <VBox spacing="1" alignment="CENTER" style="-fx-background-color: lightgray; -fx-min-width: 160px; -fx-pref-width: 120px;">
+            <!-- Adicione os botões ou componentes da sidebar aqui -->
+        </VBox>
+    </left>
+    <center>
+        <!-- Área do Chat -->
+        <VBox alignment="CENTER" spacing="10" VBox.vgrow="ALWAYS" styleClass="custom-vbox" style="-fx-padding: 0 80 0 -140;"
+              prefWidth="650" minWidth="650">
+            <ListView fx:id="chatListView" VBox.vgrow="ALWAYS" styleClass="custom-list-view" />
+
+            <HBox spacing="10" alignment="CENTER">
+                <TextField fx:id="messageTextField" promptText="Digite sua mensagem..." HBox.hgrow="ALWAYS" />
+                <Button text="Enviar" onAction="#sendMessage" />
+
+            </HBox>
+        </VBox>
+    </center>
+
+
+
+
+</BorderPane>

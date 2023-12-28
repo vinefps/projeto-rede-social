@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.Region?>
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.SolicitacaoController" >
+    <VBox spacing="1" alignment="CENTER" style="-fx-background-color: lightgray; -fx-min-width: 160px; -fx-pref-width: 120px;">
+        <VBox spacing="1" alignment="CENTER" style="-fx-background-color: lightgray; -fx-min-width: 160px; -fx-pref-width: 120px;">
+            <VBox spacing="20" alignment="TOP_LEFT" prefHeight="600.0" prefWidth="500.0">
+
+                <VBox fx:id="vboxDynamicLabels" spacing="20" prefHeight="60.0" prefWidth="80" style="-fx-background-color: rgb(200, 200, 200); -fx-padding: 20px; -fx-border-width: 0px; -fx-border-radius: 10px; -fx-margin: 80px;">
+                </VBox>
+            </VBox>
+        </VBox>
+    </VBox>
+</VBox>
+
+

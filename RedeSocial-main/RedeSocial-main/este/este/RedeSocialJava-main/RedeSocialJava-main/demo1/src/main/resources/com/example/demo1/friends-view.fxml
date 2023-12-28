@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo1.Controller.FriendsController">
+    <VBox spacing="1" alignment="CENTER" style="-fx-background-color: lightgray; -fx-min-width: 160px; -fx-pref-width: 120px;">
+        <VBox spacing="20" alignment="TOP_LEFT" prefHeight="600.0" prefWidth="500.0">
+
+            <VBox fx:id="vboxDynamicLabels" spacing="20" prefHeight="60.0" prefWidth="80" style="-fx-background-color: rgb(200, 200, 200); -fx-padding: 20px; -fx-border-width: 0px; -fx-border-radius: 10px; -fx-margin: 80px;">
+            </VBox>
+        </VBox>
+    </VBox>
+</VBox>

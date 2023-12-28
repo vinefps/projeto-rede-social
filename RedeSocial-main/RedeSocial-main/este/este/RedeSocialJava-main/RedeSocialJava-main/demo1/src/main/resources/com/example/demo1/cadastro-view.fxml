@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.DatePicker?>
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.RegisterController">
+    <center>
+        <VBox spacing="5" alignment="CENTER" style="-fx-padding: 20;" >
+            <Label text="Cadastro" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+            <HBox spacing="5" alignment="CENTER">
+                <TextField fx:id="nome" promptText="Nome" HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <HBox spacing="5" alignment="CENTER">
+                <TextField fx:id="email" promptText="E-mail" HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <HBox spacing="5" alignment="CENTER">
+                <PasswordField fx:id="senha" promptText="Senha" HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <HBox spacing="5" alignment="CENTER">
+                <PasswordField fx:id="confirmaSenha" promptText="Confirmar Senha" HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <HBox spacing="5" alignment="CENTER">
+                <HBox spacing="5">
+                    <DatePicker fx:id="dtaNascimento" promptText="Data de Nascimento"/>
+                    <TextField fx:id="telefone" promptText="Telefone"/>
+                </HBox>
+            </HBox>
+
+            <Button text="Cadastrar" style="-fx-background-color: #28A745; -fx-text-fill: white;" onAction="#registrar"/>
+            <Button text="Voltar" style="-fx-background-color: #28A745; -fx-text-fill: white;" onAction="#backLogin"/>
+
+        </VBox>
+    </center>
+</BorderPane>

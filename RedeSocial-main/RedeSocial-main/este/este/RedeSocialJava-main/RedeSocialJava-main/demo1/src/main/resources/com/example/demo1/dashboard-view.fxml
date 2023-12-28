@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.DashboardController" fx:id="mainBorderPane">
+    <left>
+        <VBox spacing="1" alignment="CENTER" style="-fx-background-color: lightgray; -fx-min-width: 160px; -fx-pref-width: 120px;">
+            <Region VBox.vgrow="ALWAYS" />
+            <Button text="Usuarios" onAction="#showUsuarios" styleClass="button" style="-fx-background-color: #4B4B4B; -fx-text-fill: white;" maxWidth="170" prefWidth="170"/>
+            <Button text="Amigos" onAction="#showFriends" styleClass="button" style="-fx-background-color: #4B4B4B; -fx-text-fill: white;" maxWidth="170" prefWidth="170"/>
+            <Button text="Solicitações" onAction="#showRequests" styleClass="button" style="-fx-background-color: #4B4B4B; -fx-text-fill: white;" maxWidth="170" prefWidth="170"/>
+            <Region VBox.vgrow="ALWAYS" />
+            <Button text="Logout" style="-fx-background-color: #4B4B4B; -fx-text-fill: white;" onAction="#exitApplication" styleClass="button" maxWidth="170" prefWidth="170"/>
+        </VBox>
+    </left>
+    <center>
+
+    </center>
+    <right>
+        <Region fx:id="friendsRegion"/>
+    </right>
+</BorderPane>
+
